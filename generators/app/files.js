@@ -3,7 +3,7 @@ module.exports = [
   { template: 'CHANGELOG.md.template', destination: 'CHANGELOG.md' },
   { template: 'editorconfig.template', destination: '.editorconfig' },
   { template: 'eslintignore.template', destination: '.eslintignore' },
-  { template: 'eslintrc.template', destination: '.eslintrc' },
+  { template: 'eslintrc.json.template', destination: '.eslintrc.json' },
   { template: 'gitattributes.template', destination: '.gitattributes' },
   { template: 'gitignore.template', destination: '.gitignore' },
   { template: 'LICENSE.template', destination: 'LICENSE' },

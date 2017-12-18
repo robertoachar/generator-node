@@ -1,0 +1,11 @@
+machine:
+  node:
+    version: 8.9.3
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - npm test

@@ -1,0 +1,24 @@
+{
+  "name": "<%= project%>",
+  "version": "1.0.0",
+  "description": "<%= description%>",
+  "author": "<%= name%> <<%=email%>>",
+  "homepage": "https://github.com/<%= username%>/<%= project%>#readme",
+  "keywords": ["node"],
+  "main": "src/index.js",
+  "files": ["src"],
+  "scripts": {
+    "lint": "eslint src/**/*.js",
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/<%= username%>/<%= project%>.git"
+  },
+  "bugs": {
+    "url": "https://github.com/<%= username%>/<%= project%>/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}

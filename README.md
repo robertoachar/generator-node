@@ -18,7 +18,7 @@ This generator provides the following features:
 * **README.md** and **CHANGELOG.md** with information about the project, installation, usage, development, author and license.
 * **Badges** for License.
 
-# Project files
+## Project files
 
 ```text
 .
@@ -37,21 +37,21 @@ This generator provides the following features:
 |--- README.md
 ```
 
-# Installation
+## Installation
 
 * Install Yeoman
 
 ```bash
-$ npm install -g yo
+npm install -g yo
 ```
 
 * Install Generator
 
 ```bash
-$ npm install -g @robertoachar/generator-node
+npm install -g @robertoachar/generator-node
 ```
 
-# Usage
+## Usage
 
 * Creating a project
 
@@ -73,7 +73,7 @@ $ yo # choose @robertoachar/node
 | Starting development mode | `npm start`    |
 | Linting code              | `npm run lint` |
 
-# Development
+## Development
 
 ### Prerequisites
 
@@ -82,13 +82,13 @@ $ yo # choose @robertoachar/node
 * Install Yeoman CLI
 
 ```bash
-$ npm install -g yo
+npm install -g yo
 ```
 
 ### Clone the repo
 
 ```bash
-$ git clone https://github.com/robertoachar/generator-node.git
+git clone https://github.com/robertoachar/generator-node.git
 ```
 
 ### Run generator
@@ -104,11 +104,11 @@ $ npm link
 $ yo # choose @robertoachar/node
 ```
 
-# Author
+## Author
 
 [Roberto Achar](https://twitter.com/robertoachar)
 
-# License
+## License
 
 [MIT](https://github.com/robertoachar/generator-node/blob/master/LICENSE)
 

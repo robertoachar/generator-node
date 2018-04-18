@@ -1,7 +1,8 @@
 const assert = require('yeoman-assert');
-const test = require('yeoman-test');
 const path = require('path');
+const test = require('yeoman-test');
 
+const files = require('../generators/app/files');
 const validate = require('../generators/app/validate');
 
 describe('TESTS', () => {
@@ -20,10 +21,7 @@ describe('TESTS', () => {
     });
 
     it('should create a project', (done) => {
-      const files = require('../generators/app/files');
-
-      let i = 0;
-      for (i = 0; i < files.length; i++) {
+      for (let i = 0; i < files.length; i += 1) {
         assert.file(files[i].destination);
       }
 

@@ -20,9 +20,9 @@ describe('TESTS', () => {
     });
 
     it('should create a project', (done) => {
-      for (let i = 0; i < files.length; i += 1) {
-        assert.file(files[i].destination);
-      }
+      files.forEach((file) => {
+        assert.file(file.destination);
+      });
 
       done();
     });

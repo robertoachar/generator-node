@@ -1,36 +1,8 @@
 const assert = require('yeoman-assert');
-const test = require('yeoman-test');
-const path = require('path');
 
 const validate = require('../generators/app/validate');
 
 describe('TESTS', () => {
-  describe('Generator Tests', () => {
-    beforeAll((done) => {
-      test
-        .run(path.join(__dirname, '../generators/app'))
-        .withPrompts({
-          project: 'awesome-project',
-          description: 'An awesome project',
-          name: 'Roberto Achar',
-          email: 'robertoachar@gmail.com',
-          username: 'robertoachar'
-        })
-        .on('end', done);
-    });
-
-    it('should create a project', (done) => {
-      const files = require('../generators/app/files');
-
-      let i = 0;
-      for (i = 0; i < files.length; i++) {
-        assert.file(files[i].destination);
-      }
-
-      done();
-    });
-  });
-
   describe('Validate Tests', () => {
     it('should return true with name', (done) => {
       const message = validate.validateName('Roberto Achar');
@@ -43,7 +15,7 @@ describe('TESTS', () => {
     it('should return an error without name', (done) => {
       const message = validate.validateName('');
 
-      assert.equal(message, 'You need to enter your name');
+      assert.equal(message, 'Enter your name');
 
       done();
     });
@@ -59,7 +31,7 @@ describe('TESTS', () => {
     it('should return an error without email', (done) => {
       const message = validate.validateEmail('');
 
-      assert.equal(message, 'You need to enter your email');
+      assert.equal(message, 'Enter your email');
 
       done();
     });
@@ -75,7 +47,7 @@ describe('TESTS', () => {
     it('should return an error without username', (done) => {
       const message = validate.validateUsername('');
 
-      assert.equal(message, 'You need to enter your username');
+      assert.equal(message, 'Enter your username');
 
       done();
     });

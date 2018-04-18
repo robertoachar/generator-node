@@ -41,7 +41,7 @@ describe('TESTS', () => {
     it('should return an error without name', (done) => {
       const message = validate.validateName('');
 
-      assert.equal(message, 'You need to enter your name');
+      assert.equal(message, 'Enter your name');
 
       done();
     });
@@ -57,7 +57,7 @@ describe('TESTS', () => {
     it('should return an error without email', (done) => {
       const message = validate.validateEmail('');
 
-      assert.equal(message, 'You need to enter your email');
+      assert.equal(message, 'Enter your email');
 
       done();
     });
@@ -73,7 +73,7 @@ describe('TESTS', () => {
     it('should return an error without username', (done) => {
       const message = validate.validateUsername('');
 
-      assert.equal(message, 'You need to enter your username');
+      assert.equal(message, 'Enter your username');
 
       done();
     });

@@ -87,8 +87,10 @@ module.exports = class extends Generator {
 
     this.npmInstall(
       [
-        'eslint',
+        'eslint@4.19.1',
+        'eslint-config-airbnb-base',
         'eslint-config-prettier',
+        'eslint-plugin-import',
         'eslint-plugin-prettier',
         'prettier'
       ],

@@ -11,12 +11,12 @@
 
 This generator provides the following features:
 
-* **src** folder as a starter point to build your project.
-* **EditorConfig** to help you define and maintain consistent coding styles between different editors.
-* **ESLint** to provide a pluggable linting utility for JavaScript.
-* **Prettier** as an opinionated code formatter.
-* **README.md** and **CHANGELOG.md** with information about the project, installation, usage, development, author and license.
-* **Badges** for License.
+- **src** folder as a starter point to build your project.
+- **EditorConfig** to help you define and maintain consistent coding styles between different editors.
+- **ESLint** to provide a pluggable linting utility for JavaScript.
+- **Prettier** as an opinionated code formatter.
+- **README.md** and **CHANGELOG.md** with information about the project, installation, usage, development, author and license.
+- **Badges** for License.
 
 # Project files
 
@@ -39,13 +39,13 @@ This generator provides the following features:
 
 # Installation
 
-* Install Yeoman
+- Install Yeoman
 
 ```bash
 $ npm install -g yo
 ```
 
-* Install Generator
+- Install Generator
 
 ```bash
 $ npm install -g @robertoachar/generator-node
@@ -53,7 +53,7 @@ $ npm install -g @robertoachar/generator-node
 
 # Usage
 
-* Creating a project
+- Creating a project
 
 ```bash
 # Create a directory for your project
@@ -63,10 +63,10 @@ $ mkdir awesome-project
 $ cd awesome-project
 
 # Generate a project
-$ yo # choose @robertoachar/node
+$ yo @robertoachar/node
 ```
 
-* Running project
+- Running project
 
 | Action                    | Usage          |
 | ------------------------- | -------------- |
@@ -77,9 +77,9 @@ $ yo # choose @robertoachar/node
 
 ### Prerequisites
 
-* Install [Node.js](https://nodejs.org)
-* Install [npm](https://www.npmjs.com/)
-* Install Yeoman CLI
+- Install [Node.js](https://nodejs.org)
+- Install [npm](https://www.npmjs.com/)
+- Install Yeoman CLI
 
 ```bash
 $ npm install -g yo
@@ -101,7 +101,7 @@ $ cd generator-node
 $ npm link
 
 # Run generator
-$ yo # choose @robertoachar/node
+$ yo @robertoachar/node
 ```
 
 # Author

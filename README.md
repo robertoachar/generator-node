@@ -53,7 +53,7 @@ $ npm install -g @robertoachar/generator-node
 
 # Usage
 
-- Creating a project
+- Create a project
 
 ```bash
 # Create a directory for your project
@@ -66,12 +66,12 @@ $ cd awesome-project
 $ yo @robertoachar/node
 ```
 
-- Running project
+- Run project
 
-| Action                    | Usage          |
-| ------------------------- | -------------- |
-| Starting development mode | `npm start`    |
-| Linting code              | `npm run lint` |
+| Action                 | Usage          |
+| ---------------------- | -------------- |
+| Start development mode | `npm start`    |
+| Lint code              | `npm run lint` |
 
 # Development
 

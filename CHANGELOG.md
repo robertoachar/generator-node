@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.2
+
+### Generator updates
+
+- **buid**: update dependencies
+- **ci**: update circleci
+- **docs**: update README
+
+### Template updates
+
+- **docs**(template): update README
+
 ## v1.2.1
 
 ### Generator updates

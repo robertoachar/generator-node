@@ -1,5 +1,17 @@
 # Changelog
 
+## v1.2.3
+
+### Generator updates
+
+- **build**: update dependencies
+- **ci**: update node version
+- **refactor**: update .gitignore
+
+### Template updates
+
+- **refactor**: update .gitignore
+
 ## v1.2.2
 
 ### Generator updates

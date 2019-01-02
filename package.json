@@ -1,6 +1,6 @@
 {
   "name": "@robertoachar/generator-node",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Yeoman generator for Node projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/generator-node#readme",

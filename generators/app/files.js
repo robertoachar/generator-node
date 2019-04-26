@@ -1,4 +1,4 @@
-module.exports = [
+const files = [
   { template: 'src/index.js.template', destination: 'src/index.js' },
   { template: 'CHANGELOG.md.template', destination: 'CHANGELOG.md' },
   { template: 'editorconfig.template', destination: '.editorconfig' },
@@ -12,3 +12,5 @@ module.exports = [
   { template: 'prettierrc.template', destination: '.prettierrc' },
   { template: 'README.md.template', destination: 'README.md' }
 ];
+
+export default files;

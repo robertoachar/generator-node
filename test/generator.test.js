@@ -1,8 +1,8 @@
-const assert = require('yeoman-assert');
-const path = require('path');
-const test = require('yeoman-test');
+import assert from 'yeoman-assert';
+import path from 'path';
+import test from 'yeoman-test';
 
-const files = require('../generators/app/files');
+import files from '../generators/app/files';
 
 describe('TESTS', () => {
   describe('Generator Tests', () => {

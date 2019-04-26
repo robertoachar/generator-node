@@ -8,6 +8,7 @@ const files = [
   { template: 'gitignore.template', destination: '.gitignore' },
   { template: 'LICENSE.template', destination: 'LICENSE' },
   { template: 'npmrc.template', destination: '.npmrc' },
+  { template: 'main.js.template', destination: 'main.js' },
   { template: 'package.json.template', destination: 'package.json' },
   { template: 'prettierrc.template', destination: '.prettierrc' },
   { template: 'README.md.template', destination: 'README.md' }

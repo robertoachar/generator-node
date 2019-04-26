@@ -8,6 +8,7 @@
     "yeoman",
     "yeoman-generator",
     "node",
+    "esm",
     "editorconfig",
     "eslint",
     "prettier",

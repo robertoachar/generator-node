@@ -1,11 +1,15 @@
-const assert = require('yeoman-assert');
+import assert from 'yeoman-assert';
 
-const validate = require('../generators/app/validate');
+import {
+  validateEmail,
+  validateName,
+  validateUsername
+} from '../generators/app/validate';
 
 describe('TESTS', () => {
   describe('Validate Tests', () => {
     it('should return true with name', (done) => {
-      const message = validate.validateName('Roberto Achar');
+      const message = validateName('Roberto Achar');
 
       assert.equal(message, true);
 
@@ -13,7 +17,7 @@ describe('TESTS', () => {
     });
 
     it('should return an error without name', (done) => {
-      const message = validate.validateName('');
+      const message = validateName('');
 
       assert.equal(message, 'Enter your name');
 
@@ -21,7 +25,7 @@ describe('TESTS', () => {
     });
 
     it('should return true with email', (done) => {
-      const message = validate.validateEmail('robertoachar@gmail.com');
+      const message = validateEmail('robertoachar@gmail.com');
 
       assert.equal(message, true);
 
@@ -29,7 +33,7 @@ describe('TESTS', () => {
     });
 
     it('should return an error without email', (done) => {
-      const message = validate.validateEmail('');
+      const message = validateEmail('');
 
       assert.equal(message, 'Enter your email');
 
@@ -37,7 +41,7 @@ describe('TESTS', () => {
     });
 
     it('should return true with username', (done) => {
-      const message = validate.validateUsername('robertoachar');
+      const message = validateUsername('robertoachar');
 
       assert.equal(message, true);
 
@@ -45,7 +49,7 @@ describe('TESTS', () => {
     });
 
     it('should return an error without username', (done) => {
-      const message = validate.validateUsername('');
+      const message = validateUsername('');
 
       assert.equal(message, 'Enter your username');
 

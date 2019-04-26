@@ -7,13 +7,13 @@
   "keywords": [
     "node"
   ],
-  "main": "src/index.js",
+  "main": "main.js",
   "files": [
     "src"
   ],
   "scripts": {
-    "lint": "eslint src/**/*.js",
-    "start": "node src/index.js"
+    "lint": "eslint 'src/**/*.js'",
+    "start": "node main.js"
   },
   "repository": {
     "type": "git",

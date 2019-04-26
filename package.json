@@ -1,6 +1,6 @@
 {
   "name": "@robertoachar/generator-node",
-  "version": "1.2.3",
+  "version": "2.0.0",
   "description": "Yeoman generator for Node projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/generator-node#readme",
@@ -8,6 +8,7 @@
     "yeoman",
     "yeoman-generator",
     "node",
+    "esm",
     "editorconfig",
     "eslint",
     "prettier",
@@ -29,19 +30,21 @@
     "url": "https://github.com/robertoachar/generator-node/issues"
   },
   "dependencies": {
+    "esm": "3.2.22",
     "yeoman-generator": "3.2.0"
   },
   "devDependencies": {
-    "@types/jest": "23.3.11",
-    "@types/yeoman-generator": "3.0.1",
-    "coveralls": "3.0.2",
-    "eslint": "5.11.1",
+    "@babel/preset-env": "7.4.3",
+    "@types/jest": "24.0.11",
+    "@types/yeoman-generator": "3.1.1",
+    "coveralls": "3.0.3",
+    "eslint": "5.16.0",
     "eslint-config-airbnb-base": "13.1.0",
-    "eslint-config-prettier": "3.3.0",
-    "eslint-plugin-import": "2.14.0",
+    "eslint-config-prettier": "4.2.0",
+    "eslint-plugin-import": "2.17.2",
     "eslint-plugin-prettier": "3.0.1",
-    "jest": "23.6.0",
-    "prettier": "1.15.3",
+    "jest": "24.7.1",
+    "prettier": "1.17.0",
     "yeoman-assert": "3.1.1",
     "yeoman-test": "1.9.1"
   },

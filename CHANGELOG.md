@@ -1,5 +1,16 @@
 # Changelog
 
+## v2.0.0
+
+### Generator Updates
+
+- **build**: update dependencies
+- **feature**: add esm
+
+### Tempalte Updates
+
+- **feature**: add esm
+
 ## v1.2.3
 
 ### Generator updates

@@ -85,9 +85,9 @@ class NodeGenerator extends Generator {
     this.log('📦  Installing dependencies...');
     this.log();
 
-    this.npmInstall(['esm']);
+    this.yarnInstall(['esm']);
 
-    this.npmInstall(
+    this.yarnInstall(
       [
         'eslint',
         'eslint-config-airbnb-base',
@@ -96,7 +96,7 @@ class NodeGenerator extends Generator {
         'eslint-plugin-prettier',
         'prettier'
       ],
-      { 'save-dev': true }
+      { dev: true }
     );
   }
 

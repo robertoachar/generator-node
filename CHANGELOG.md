@@ -4,13 +4,13 @@
 
 ### Generator Updates
 
-**build**: update dependencies
-**docs**: update README
-**feature**: use yarn to install dependencies
+- **build**: update dependencies
+- **docs**: update README
+- **feature**: use yarn to install dependencies
 
 ### Template Updates
 
-**docs**: update README
+- **docs**: update README
 
 ## v2.0.0
 

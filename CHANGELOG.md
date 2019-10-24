@@ -1,5 +1,17 @@
 # Changelog
 
+## v3.0.0
+
+### Generator Updates
+
+**build**: update dependencies
+**docs**: update README
+**feature**: use yarn to install dependencies
+
+### Template Updates
+
+**docs**: update README
+
 ## v2.0.0
 
 ### Generator Updates

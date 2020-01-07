@@ -1,5 +1,23 @@
 # Changelog
 
+## v4.0.0
+
+### Generator Updates
+
+- **build**: add ntl support
+- **build**: update dependencies
+- **docs**: update README
+- **refactor**: improve esm
+- **refactor**: update .gitignore
+- **style**: format using prettier
+- **style**: remove prettier config file
+- **test**: improve jest and eslint
+
+### Template Updates
+
+- **build**: add ntl support
+- **feature**: add jest and jest-runner-eslint
+
 ## v3.0.0
 
 ### Generator Updates

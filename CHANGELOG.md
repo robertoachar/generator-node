@@ -12,6 +12,7 @@
 - **style**: format using prettier
 - **style**: remove prettier config file
 - **test**: improve jest and eslint
+- **test**: remove main.js from test coverage
 
 ### Template Updates
 

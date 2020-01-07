@@ -12,8 +12,15 @@
     "src"
   ],
   "scripts": {
-    "lint": "eslint 'src/**/*.js'",
-    "start": "node main.js"
+    "start": "node main.js",
+    "lint": "jest --config jest-eslint.config.js",
+    "lint:watch": "jest --config jest-eslint.config.js --watch",
+    "jest": "jest --config jest-test.config.js",
+    "jest:coverage": "jest --config jest-test.config.js --coverage",
+    "jest:watch": "jest --config jest-test.config.js --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "repository": {
     "type": "git",

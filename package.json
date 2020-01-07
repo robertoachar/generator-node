@@ -26,6 +26,19 @@
     "test:coverage": "jest --coverage",
     "coveralls": "npm run jest:coverage && cat ./coverage/lcov.info | coveralls"
   },
+  "ntl": {
+    "descriptions": {
+      "lint": "Run lint",
+      "lint:watch": "Start lint in watch mode",
+      "jest": "Run tests",
+      "jest:coverage": "Run tests with code coverage",
+      "jest:watch": "Start tests in watch mode",
+      "test": "Run lint + tests",
+      "test:watch": "Start lint + tests in watch mode",
+      "test:coverage": "Run lint + tests with code coverage",
+      "coveralls": "Send coverage results to Coveralls"
+    }
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/robertoachar/generator-node.git"

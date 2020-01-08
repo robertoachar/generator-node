@@ -12,8 +12,28 @@
     "src"
   ],
   "scripts": {
-    "lint": "eslint 'src/**/*.js'",
-    "start": "node main.js"
+    "start": "node main.js",
+    "lint": "jest --config jest-eslint.config.js",
+    "lint:watch": "jest --config jest-eslint.config.js --watch",
+    "jest": "jest --config jest-test.config.js",
+    "jest:coverage": "jest --config jest-test.config.js --coverage",
+    "jest:watch": "jest --config jest-test.config.js --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "ntl": {
+    "descriptions": {
+      "start": "Start development mode",
+      "lint": "Run lint",
+      "lint:watch": "Start lint in watch mode",
+      "jest": "Run tests",
+      "jest:coverage": "Run tests with code coverage",
+      "jest:watch": "Start tests in watch mode",
+      "test": "Run lint + tests",
+      "test:watch": "Start lint + tests in watch mode",
+      "test:coverage": "Run lint + tests with code coverage"
+    }
   },
   "repository": {
     "type": "git",

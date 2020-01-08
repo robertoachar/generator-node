@@ -1,4 +1,4 @@
-const validateName = (value) => {
+const validateName = value => {
   if (value.length === 0) {
     return 'Enter your name';
   }
@@ -6,7 +6,7 @@ const validateName = (value) => {
   return true;
 };
 
-const validateEmail = (value) => {
+const validateEmail = value => {
   if (value.length === 0) {
     return 'Enter your email';
   }
@@ -14,7 +14,7 @@ const validateEmail = (value) => {
   return true;
 };
 
-const validateUsername = (value) => {
+const validateUsername = value => {
   if (value.length === 0) {
     return 'Enter your username';
   }

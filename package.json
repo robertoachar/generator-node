@@ -1,6 +1,6 @@
 {
   "name": "@robertoachar/generator-node",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "description": "Yeoman generator for Node projects.",
   "author": "Roberto Achar <robertoachar@gmail.com>",
   "homepage": "https://github.com/robertoachar/generator-node#readme",
@@ -16,11 +16,28 @@
   ],
   "main": "generators/app/index.js",
   "scripts": {
-    "coverage": "jest --colors --coverage",
-    "coveralls": "npm run coverage && cat ./coverage/lcov.info | coveralls",
-    "jest": "jest --colors --verbose",
-    "lint": "eslint generators/**/*.js test/**/*.js",
-    "test": "npm run lint && npm run jest"
+    "lint": "jest --config jest-eslint.config.js",
+    "lint:watch": "jest --config jest-eslint.config.js --watch",
+    "jest": "jest --config jest-test.config.js",
+    "jest:coverage": "jest --config jest-test.config.js --coverage",
+    "jest:watch": "jest --config jest-test.config.js --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "coveralls": "npm run jest:coverage && cat ./coverage/lcov.info | coveralls"
+  },
+  "ntl": {
+    "descriptions": {
+      "lint": "Run lint",
+      "lint:watch": "Start lint in watch mode",
+      "jest": "Run tests",
+      "jest:coverage": "Run tests with code coverage",
+      "jest:watch": "Start tests in watch mode",
+      "test": "Run lint + tests",
+      "test:watch": "Start lint + tests in watch mode",
+      "test:coverage": "Run lint + tests with code coverage",
+      "coveralls": "Send coverage results to Coveralls"
+    }
   },
   "repository": {
     "type": "git",
@@ -31,20 +48,25 @@
   },
   "dependencies": {
     "esm": "3.2.25",
-    "yeoman-generator": "4.1.0"
+    "yeoman-generator": "4.4.0"
   },
   "devDependencies": {
-    "@babel/preset-env": "7.6.3",
-    "@types/jest": "24.0.19",
+    "@babel/core": "7.7.7",
+    "@babel/preset-env": "7.7.7",
+    "@types/jest": "24.0.25",
     "@types/yeoman-generator": "3.1.4",
-    "coveralls": "3.0.7",
-    "eslint": "6.5.1",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "24.9.0",
+    "coveralls": "3.0.9",
+    "eslint": "6.8.0",
     "eslint-config-airbnb-base": "14.0.0",
-    "eslint-config-prettier": "6.4.0",
-    "eslint-plugin-import": "2.18.2",
-    "eslint-plugin-prettier": "3.1.1",
+    "eslint-config-prettier": "6.9.0",
+    "eslint-plugin-import": "2.19.1",
+    "eslint-plugin-prettier": "3.1.2",
     "jest": "24.9.0",
-    "prettier": "1.18.2",
+    "jest-runner-eslint": "0.7.5",
+    "jest-watch-typeahead": "0.4.2",
+    "prettier": "1.19.1",
     "yeoman-assert": "3.1.1",
     "yeoman-test": "2.0.0"
   },

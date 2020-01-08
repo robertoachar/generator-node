@@ -49,7 +49,7 @@ class NodeGenerator extends Generator {
       }
     ];
 
-    this.prompt(prompts).then((props) => {
+    this.prompt(prompts).then(props => {
       this.props = props;
       done();
     });
@@ -71,7 +71,7 @@ class NodeGenerator extends Generator {
       year: new Date().getFullYear()
     };
 
-    files.forEach((file) => {
+    files.forEach(file => {
       this.fs.copyTpl(
         this.templatePath(file.template),
         this.destinationPath(file.destination),
@@ -89,11 +89,19 @@ class NodeGenerator extends Generator {
 
     this.yarnInstall(
       [
+        '@babel/core',
+        '@babel/preset-env',
+        '@types/jest',
+        'babel-eslint',
+        'babel-jest',
         'eslint',
         'eslint-config-airbnb-base',
         'eslint-config-prettier',
         'eslint-plugin-import',
         'eslint-plugin-prettier',
+        'jest',
+        'jest-runner-eslint',
+        'jest-watch-typeahead',
         'prettier'
       ],
       { dev: true }
@@ -101,6 +109,8 @@ class NodeGenerator extends Generator {
   }
 
   end() {
+    this.fs.delete('.yo-rc.json');
+
     this.log();
     this.log('🎉  Successfully generated!');
   }

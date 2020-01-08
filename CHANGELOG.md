@@ -1,5 +1,11 @@
 # Changelog
 
+## v4.0.1
+
+### Generator Updates
+
+- **docs**: update README
+
 ## v4.0.0
 
 ### Generator Updates

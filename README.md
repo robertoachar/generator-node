@@ -13,9 +13,12 @@ This generator provides the following features:
 
 - **src** folder as a starter point to build your project.
 - **esm** as a simple, babel-less, bundle-less ECMAScript module loader.
-- **EditorConfig** to help you define and maintain consistent coding styles between different editors.
 - **ESLint** to provide a pluggable linting utility for JavaScript.
 - **Prettier** as an opinionated code formatter.
+- **Jest** as a JavaScript Testing Framework with a focus on simplicity.
+- **jest-runner-eslint** as an ESLint runner for Jest.
+- **ntl** support. Interactive cli to list and run package.json scripts.
+- **EditorConfig** to help you define and maintain consistent coding styles between different editors.
 - **README.md** and **CHANGELOG.md** with information about the project, installation, usage, development, author and license.
 - **Badges** for License.
 
@@ -31,8 +34,11 @@ This generator provides the following features:
 |--- .gitattributes
 |--- .gitignore
 |--- .npmrc
-|--- .prettierrc
+|--- babel.config.js
 |--- CHANGELOG.md
+|--- jest-eslint.config.js
+|--- jest-test.config.js
+|--- jest.config.js
 |--- LICENSE
 |--- main.js
 |--- package.json
@@ -44,10 +50,22 @@ This generator provides the following features:
 - Install Yeoman
 
 ```bash
+$ npm i -g yo
+```
+
+or
+
+```bash
 $ yarn global add yo
 ```
 
 - Install Generator
+
+```bash
+$ npm i -g @robertoachar/generator-node
+```
+
+or
 
 ```bash
 $ yarn global add @robertoachar/generator-node
@@ -72,7 +90,7 @@ $ yo @robertoachar/node
 
 | Action                              | Usage (npm)             | Usage (yarn)         |
 | ----------------------------------- | ----------------------- | -------------------- |
-| Start development mode              | `npm start`             | `yarn start          |
+| Start development mode              | `npm start`             | `yarn start`         |
 | Run lint                            | `npm run lint`          | `yarn lint`          |
 | Start lint in watch mode            | `npm run lint:watch`    | `yarn lint:watch`    |
 | Run tests                           | `npm run jest`          | `yarn jest`          |
@@ -92,6 +110,12 @@ $ yo @robertoachar/node
 - Install Yeoman CLI
 
 ```bash
+$ npm i -g add yo
+```
+
+or
+
+```bash
 $ yarn global add yo
 ```
 
@@ -108,7 +132,7 @@ $ git clone https://github.com/robertoachar/generator-node.git
 $ cd generator-node
 
 # Link generator
-$ yarn link
+$ yarn link # or npm link
 
 # Run generator
 $ yo @robertoachar/node

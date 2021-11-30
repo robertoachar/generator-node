@@ -57,7 +57,7 @@
     "@types/jest": "27.0.3",
     "@types/yeoman-generator": "4.11.4",
     "babel-jest": "27.4.2",
-    "coveralls": "3.0.9",
+    "coveralls": "3.1.1",
     "eslint": "8.3.0",
     "eslint-config-airbnb-base": "15.0.0",
     "eslint-config-prettier": "8.3.0",

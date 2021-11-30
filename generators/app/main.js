@@ -18,38 +18,38 @@ class NodeGenerator extends Generator {
         type: 'input',
         name: 'project',
         message: 'What is the name of your project?',
-        default: 'awesome-project'
+        default: 'awesome-project',
       },
       {
         type: 'input',
         name: 'description',
         message: 'What is the description of your project?',
-        default: 'An awesome project'
+        default: 'An awesome project',
       },
       {
         type: 'input',
         name: 'name',
         message: 'What is your name?',
         validate: validateName,
-        store: true
+        store: true,
       },
       {
         type: 'input',
         name: 'email',
         message: 'What is your email?',
         validate: validateEmail,
-        store: true
+        store: true,
       },
       {
         type: 'input',
         name: 'username',
         message: 'What is your GitHub username?',
         validate: validateUsername,
-        store: true
-      }
+        store: true,
+      },
     ];
 
-    this.prompt(prompts).then(props => {
+    this.prompt(prompts).then((props) => {
       this.props = props;
       done();
     });
@@ -68,10 +68,10 @@ class NodeGenerator extends Generator {
       name,
       email,
       username,
-      year: new Date().getFullYear()
+      year: new Date().getFullYear(),
     };
 
-    files.forEach(file => {
+    files.forEach((file) => {
       this.fs.copyTpl(
         this.templatePath(file.template),
         this.destinationPath(file.destination),
@@ -102,7 +102,7 @@ class NodeGenerator extends Generator {
         'jest',
         'jest-runner-eslint',
         'jest-watch-typeahead',
-        'prettier'
+        'prettier',
       ],
       { dev: true }
     );

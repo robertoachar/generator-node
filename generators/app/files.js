@@ -9,18 +9,18 @@ const files = [
   { template: 'gitignore.template', destination: '.gitignore' },
   {
     template: 'jest-eslint.config.js.template',
-    destination: 'jest-eslint.config.js'
+    destination: 'jest-eslint.config.js',
   },
   {
     template: 'jest-test.config.js.template',
-    destination: 'jest-test.config.js'
+    destination: 'jest-test.config.js',
   },
   { template: 'jest.config.js.template', destination: 'jest.config.js' },
   { template: 'LICENSE.template', destination: 'LICENSE' },
   { template: 'npmrc.template', destination: '.npmrc' },
   { template: 'main.js.template', destination: 'main.js' },
   { template: 'package.json.template', destination: 'package.json' },
-  { template: 'README.md.template', destination: 'README.md' }
+  { template: 'README.md.template', destination: 'README.md' },
 ];
 
 export default files;

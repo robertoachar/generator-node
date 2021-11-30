@@ -3,5 +3,5 @@ module.exports = {
   testEnvironment: 'node',
   testMatch: ['<rootDir>/__tests__/**/*.js'],
   collectCoverageFrom: ['**/src/**/**.js'],
-  verbose: true
+  verbose: true,
 };

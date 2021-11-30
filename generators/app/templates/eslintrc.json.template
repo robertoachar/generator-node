@@ -1,6 +1,9 @@
 {
-  "extends": ["airbnb-base", "prettier"],
-  "parser": "babel-eslint",
+  "extends": [
+    "airbnb-base",
+    "prettier"
+  ],
+  "parser": "@babel/eslint-parser",
   "parserOptions": {
     "ecmaVersion": 2020,
     "sourceType": "module"
@@ -9,7 +12,9 @@
     "jest": true,
     "node": true
   },
-  "plugins": ["prettier"],
+  "plugins": [
+    "prettier"
+  ],
   "rules": {
     "prettier/prettier": [
       "error",

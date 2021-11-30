@@ -6,21 +6,21 @@ import files from '../generators/app/files';
 
 describe('TESTS', () => {
   describe('Generator Tests', () => {
-    beforeAll(done => {
+    beforeAll((done) => {
       test
-        .run(path.join(__dirname, '../generators/app'))
+        .run(path.join(__dirname, '../generators/app/main.js'))
         .withPrompts({
           project: 'awesome-project',
           description: 'An awesome project',
           name: 'Roberto Achar',
           email: 'robertoachar@gmail.com',
-          username: 'robertoachar'
+          username: 'robertoachar',
         })
         .on('end', done);
     });
 
-    it('should create a project', done => {
-      files.forEach(file => {
+    it('should create a project', (done) => {
+      files.forEach((file) => {
         assert.file(file.destination);
       });
 

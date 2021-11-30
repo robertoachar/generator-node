@@ -91,8 +91,8 @@ class NodeGenerator extends Generator {
       [
         '@babel/core',
         '@babel/preset-env',
+        '@babel/eslint-parser',
         '@types/jest',
-        'babel-eslint',
         'babel-jest',
         'eslint',
         'eslint-config-airbnb-base',
